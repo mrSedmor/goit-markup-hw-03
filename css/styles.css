@@ -51,6 +51,9 @@
 
   /* #eeeeee */
   --portfolio-container-border-color: #eeeeee;
+
+  /* Зазор в сетке между portfolio-item */
+  --portfolio-item-gap: 30px;
 }
 
 body {
@@ -360,8 +363,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
+  margin-top: calc(-1 * var(--portfolio-item-gap));
+  margin-left: calc(-1 * var(--portfolio-item-gap));
 }
 
+.portfolio-list > .item {
+  flex-basis: calc(100% / 3 - var(--portfolio-item-gap));
+  margin-top: var(--portfolio-item-gap);
+  margin-left: var(--portfolio-item-gap);
+}
+
+/*
 .portfolio-list > .item {
   width: calc((100% - 2 * 30px) / 3);
 }
@@ -373,6 +385,7 @@ body {
 .portfolio-list > .item:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
+*/
 
 .portfolio-list .image {
   display: block;
