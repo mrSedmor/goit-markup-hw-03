@@ -43,12 +43,14 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
+          <button type="button" class="hero-button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Особенности -->
-      <section class="section">
+      <section class="section no-bottom-padding">
         <div class="container">
           <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="features list">
@@ -75,21 +77,21 @@
               <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
-          <!-- </div> -->
-          <!-- </section> -->
+        </div>
+      </section>
 
-          <!-- Чем мы занимаемся -->
-          <!-- <section class="section"> -->
-          <!-- <div class="container"> -->
+      <!-- Чем мы занимаемся -->
+      <section class="section">
+        <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list area-list">
-            <li>
+            <li class="item">
               <img src="./images/illustration-1.jpg" alt="Веб дизайн для ПК и планшета" width="370" height="294" />
             </li>
-            <li>
+            <li class="item">
               <img src="./images/illustration-2.jpg" alt="Веб дизайн под смартфон" width="370" height="294" />
             </li>
-            <li>
+            <li class="item">
               <img src="./images/illustration-3.jpg" alt="Подбор цветовой палитры" width="370" height="294" />
             </li>
           </ul>
@@ -103,23 +105,31 @@
           <ul class="list member-list">
             <li class="member-item">
               <img src="./images/igor-demyanenko.jpg" alt="Фотография Игоря Демьяненко" width="270" height="260" />
-              <h3 class="member-title">Игорь Демьяненко</h3>
-              <p lang="en" class="member-description">Product Designer</p>
+              <div class="member-item-container">
+                <h3 class="member-title">Игорь Демьяненко</h3>
+                <p lang="en" class="member-description">Product Designer</p>
+              </div>
             </li>
             <li class="member-item">
               <img src="./images/olga-repina.jpg" alt="Фотография Ольги Репиной" width="270" height="260" />
-              <h3 class="member-title">Ольга Репина</h3>
-              <p lang="en" class="member-description">Frontend Developer</p>
+              <div class="member-item-container">
+                <h3 class="member-title">Ольга Репина</h3>
+                <p lang="en" class="member-description">Frontend Developer</p>
+              </div>
             </li>
             <li class="member-item">
               <img src="./images/nikolay-tarasov.jpg" alt="Фотография Николая Тарасова" width="270" height="260" />
-              <h3 class="member-title">Николай Тарасов</h3>
-              <p lang="en" class="member-description">Marketing</p>
+              <div class="member-item-container">
+                <h3 class="member-title">Николай Тарасов</h3>
+                <p lang="en" class="member-description">Marketing</p>
+              </div>
             </li>
             <li class="member-item">
               <img src="./images/mihail-ermakov.jpg" alt="Фотография Михаила Ермакова" width="270" height="260" />
-              <h3 class="member-title">Михаил Ермаков</h3>
-              <p lang="en" class="member-description">UI Designer</p>
+              <div class="member-item-container">
+                <h3 class="member-title">Михаил Ермаков</h3>
+                <p lang="en" class="member-description">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

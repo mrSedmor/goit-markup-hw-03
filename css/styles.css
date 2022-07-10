@@ -68,6 +68,14 @@ body {
   color: var(--primary-text-color);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -104,8 +112,11 @@ body {
   padding-bottom: 94px;
 }
 
+.section.no-bottom-padding {
+  padding-bottom: 0;
+}
+
 .section-title {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -119,9 +130,6 @@ body {
 /* Хедер */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -177,6 +185,13 @@ body {
   color: var(--title-color);
 }
 
+.nav-list .link,
+.contact-list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
 .nav-list .item:nth-child(n + 2),
 .contact-list .item:nth-child(n + 2) {
   margin-left: 50px;
@@ -200,7 +215,6 @@ body {
   background-color: var(--dark-background-color);
 }
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -237,10 +251,9 @@ body {
 }
 
 /* Особенности */
+
 .features {
   display: flex;
-  /* justify-content: space-between; */
-  margin-bottom: 94px;
   margin-left: calc(-1 * var(--item-gap));
 }
 
@@ -250,7 +263,6 @@ body {
 }
 
 .feature-title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -262,9 +274,6 @@ body {
 }
 
 .feature-text {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -274,9 +283,11 @@ body {
 
 .area-list {
   display: flex;
-  justify-content: space-between;
 }
 
+.area-list .item:nth-child(n + 2) {
+  margin-left: 30px;
+}
 /* Наша команда */
 
 .team-section {
@@ -292,13 +303,17 @@ body {
 .member-item {
   flex-basis: calc(100% / 4 - var(--item-gap));
   margin-left: var(--item-gap);
-  padding-bottom: 30px;
 
   text-align: center;
   background-color: var(--white-color);
 
   box-shadow: var(--member-item-shadow);
   border-radius: 0px 0px 4px 4px;
+}
+
+.member-item-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* .member-item:not(:first-child) */
@@ -315,7 +330,6 @@ body {
 }
 
 .member-title {
-  margin-top: 30px;
   font-weight: 500;
 
   color: var(--title-color);
@@ -345,7 +359,7 @@ body {
 
   color: var(--title-color);
   background-color: var(--portfolio-button-background-color);
-  /* text-align: center; */
+
   cursor: pointer;
 
   border-style: none;
@@ -367,7 +381,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+
   margin-top: calc(-1 * var(--item-gap));
   margin-left: calc(-1 * var(--item-gap));
 }
@@ -414,9 +428,6 @@ body {
 }
 
 .portfolio-type {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -430,8 +441,8 @@ body {
   background-color: var(--dark-background-color);
 }
 
-.footer .logo {
-  margin-bottom: 20px;
+.footer .address {
+  margin-top: 20px;
 }
 
 .address {
@@ -442,15 +453,14 @@ body {
 }
 
 .address-location {
-  margin-bottom: 9px;
-
   color: var(--white-color);
 }
 
 .address-contacts {
+  margin-top: 9px;
   color: var(--address-contacts-color);
 }
 
-.address-contacts > li:not(:last-child) {
-  margin-bottom: 9px;
+.address-contacts > li:not(:first-child) {
+  margin-top: 9px;
 }
